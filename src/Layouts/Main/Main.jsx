@@ -3,20 +3,10 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import {  Layout, Menu } from 'antd';
 import './Main.css'
 import menuList from '../../utils/DummyData';
+import profileImage from '../../../public/images/boy.png'
 
 
 const { Header, Content, Sider } = Layout;
-
-
-// function getItem(label, key, icon, children) {
-//   return {
-//     key,
-//     icon,
-//     children,
-//     label,
-//   };
-// }
-
 
 
 const Main = () => {
@@ -33,6 +23,12 @@ const Main = () => {
     >
       <Header>
           <h3>Payroll Management System</h3>
+          <div className="headerContainer">
+            <p>Super Admin</p>
+            <div className='profileContainer'>
+              <img src={profileImage} alt="profile_img" className='profileImage'/>
+            </div>
+          </div>
       </Header>
       <Layout>
       <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
