@@ -7,24 +7,23 @@ import Dashboard from "../pages/dashboard/Dashboard";
 import Attance from "../pages/management/Attance/Attance";
 import Leave from "../pages/management/Leave/Leave";
 import Loan from "../pages/management/Loan/Loan";
+import Management from "../pages/management/management/Management";
 import NotFound from "../pages/notfound/NotFound";
 import Department from "../pages/permission/Department/Department";
+import Permission from "../pages/permission/Permission/Permission";
 import RolePermission from "../pages/permission/Rolepermission/RolePermission";
 import User from "../pages/permission/User/User";
+import Report from "../pages/report/Report/Report";
 import TransactionHistory from "../pages/report/Transaction-History/TransactionHistory";
 import Generate from "../pages/salary/GenerateSalary/Generate";
 import History from "../pages/salary/History/History";
+import Salaray from "../pages/salary/salary/Salaray";
 
 export const data = [
     {
         path:'auth/login',
         text:'Login',
         Component:Login
-    },
-    {
-        path:"auth/logout",
-        text:"Logout",
-        Component:Logout
     },
     {
         path:'/',
@@ -45,9 +44,13 @@ export const data = [
                 text:"Management",
                 children:[
                         {
+                            Component:Management,
+                            index:true
+                        },
+                        {
                             Component:Attance,
                             text:'Attance',
-                            index:true
+                            path:'attance'
                         },
                         {
                             path:'leave',
@@ -67,6 +70,10 @@ export const data = [
                     children:[
                         {
                             index:true,
+                            Component:Salaray
+                        },
+                        {
+                            path:"generate",
                             Component:Generate,
                             text:"Generate Salary"
                         },
@@ -83,17 +90,25 @@ export const data = [
                     children:[
                         {
                             index:true,
+                            Component:Report
+                        },
+                        {
+                            path:'transactionReport',
                             Component:TransactionHistory,
                             text:"Transaction History"
                         }
                     ]
                 },
                 {
-                    path:"permission",
+                    path:"role",
                     text:'Permission',
                     children:[
-                        {   
+                        {
                             index:true,
+                            Component:Permission
+                        },
+                        {   
+                            path:"permission",
                             Component:RolePermission,
                             text:"UserRolePermission"
                         },
@@ -109,6 +124,11 @@ export const data = [
                         },
                     ]
                 },
+                {
+                    path:"auth/logout",
+                    text:"Logout",
+                    Component:Logout
+                }
         ]
     },
     {
