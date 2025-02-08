@@ -68,3 +68,31 @@ h4{
 :where(.css-dev-only-do-not-override-xex5fb).ant-switch.ant-switch-checked{
   background:green !important;
 }
+.logoutContainer{
+  box-shadow: 1px 1px 3px #56638A;
+  width: 35%;
+  margin: 150px auto;
+  padding: 30px 10px;
+  height: 150px;
+  border-radius: 10px;
+}
+.logoutText{
+  text-align: center;
+}
+.btnGroup{
+  margin-top:2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.noBtn{
+  margin-right: 1rem;
+  background-color: red;
+  color: white;
+  width: 100px;
+}
+.yesBtn{
+  background-color: blue;
+  color: white;
+  width: 100px;
+}
