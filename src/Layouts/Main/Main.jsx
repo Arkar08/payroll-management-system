@@ -3,7 +3,7 @@ import { Outlet, useNavigate } from 'react-router-dom';
 import {  Layout, Menu } from 'antd';
 import './Main.css'
 import menuList from '../../utils/DummyData';
-import profileImage from '../../../public/images/boy.png'
+import profileImage from '/images/boy.png'
 
 
 const { Header, Content, Sider } = Layout;

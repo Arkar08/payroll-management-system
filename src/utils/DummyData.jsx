@@ -28,14 +28,14 @@ const menuList = [
     icon:<DesktopOutlined />,
     children:[
       {
-        label:"Employee",
-        key:"/role/employee",
-        icon:<UserOutlined />
-      },
-      {
         label:"Department",
         key:"/role/department",
         icon:<ApartmentOutlined />
+      },
+      {
+        label:"Employee",
+        key:"/role/employee",
+        icon:<UserOutlined />
       },
       {
         label:"Permission",

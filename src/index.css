@@ -1,3 +1,11 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+
 h4{
   font-size: 24px;
   font-weight: 400;
@@ -11,4 +19,52 @@ h4{
 .inputBox{
   width: 400px;
   display: flex;
+}
+.editIcon{
+  font-size: 20px;
+}
+.ant-table-cell{
+  text-align: center !important;
+}
+.delteIcon{
+  font-size: 20px;
+  color: red;
+}
+.form{
+  width: 80%;
+  height: 100%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+.item{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 20px;
+}
+:where(.css-dev-only-do-not-override-xex5fb).ant-select-single {
+  height: 50px;
+}
+.input{
+  width: 100%;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
+.button{
+  width: 200px !important;
+  height: 40px !important;
+}
+.modalText{
+  color: black;
+}
+.ant-modal-title{
+  text-align: center;
+  font-size: 24px !important;
+}
+:where(.css-dev-only-do-not-override-xex5fb).ant-switch.ant-switch-checked{
+  background:green !important;
 }
