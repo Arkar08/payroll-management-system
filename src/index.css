@@ -96,3 +96,61 @@ h4{
   color: white;
   width: 100px;
 }
+
+
+.main{
+  overflow: hidden;
+}
+.ant-layout-sider-children{
+  margin-top: 20px !important;
+}
+:where(.css-dev-only-do-not-override-xex5fb).ant-layout-header{
+  background-color: #56638A !important;
+}
+aside{
+  background-color: #56638A !important;
+}
+.ant-menu{
+  background-color: #56638A !important;
+}
+:where(.css-dev-only-do-not-override-xex5fb).ant-menu-dark.ant-menu-inline .ant-menu-sub.ant-menu-inline, :where(.css-dev-only-do-not-override-xex5fb).ant-menu-dark>.ant-menu.ant-menu-inline .ant-menu-sub.ant-menu-inline{
+  background-color: #56638A !important;
+}
+:where(.css-dev-only-do-not-override-xex5fb).ant-layout-sider .ant-layout-sider-trigger{
+  background-color: #56638A !important;
+}
+:where(.css-dev-only-do-not-override-xex5fb).ant-layout-header{
+  padding:0px 30px;
+  line-height: 0px;
+}
+Header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h3{
+  font-size: 24px !important;
+  font-weight: 500;
+  color: aliceblue;
+}
+.headerContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p{
+  color: aliceblue;
+  font-size: 14px;
+  font-weight: 400;
+}
+.profileContainer{
+  width: 50px;
+  height: 50px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+.profileImage{
+  height: 100%;
+  width: 100%;
+}

@@ -1,7 +1,7 @@
-import { useState} from 'react'
+import 'react'
+import {useState} from 'react'
 import { Outlet, useNavigate } from 'react-router-dom';
 import {  Layout, Menu } from 'antd';
-import './Main.css'
 import menuList from '../../utils/DummyData';
 import profileImage from '/images/boy.png'
 
