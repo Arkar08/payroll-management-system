@@ -154,3 +154,34 @@ p{
   height: 100%;
   width: 100%;
 }
+.loginContainer{
+  position: relative;
+}
+.loginForm{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,50%);
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 1px 1px 3px black;
+  border-radius: 10px;
+  padding: 10px 20px;
+}
+.loginText{
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  color: #56638A !important;
+  font-size: 24px !important;
+}
+.remember,.buttonSubmit{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginButton{
+  width: 400px;
+  font-size: 18px !important;
+  text-transform: uppercase;
+}
